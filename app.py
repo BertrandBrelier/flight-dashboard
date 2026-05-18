@@ -8,6 +8,14 @@ st.set_page_config(
 
 st.title("International Flights Dashboard")
 
+st.markdown(
+    """
+    **Designed and built by Bertrand Brelier**  
+    Quatalyzer Inc. | [www.quatalyzer.com](https://www.quatalyzer.com)
+    """
+)
+
+
 @st.cache_data
 def load_data(file_path):
     return pd.read_csv(file_path, low_memory=False)
